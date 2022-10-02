@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Jag har skrivit min kod enligt utbildnings meterial från kursens websidan men med mina egna variationen.
+inte alltid allt passar bra pga (mina tankar) jag har använd gratis versionen av Bootstrap och inte allt är 
+tillgänligt, då kopierade jag den kod som jag hade tillgång till, t.ex istellet fa-regular fa-heart  
+använder jag fa-solid fa-heart.
+Jag har gjort timer i form av bild pga alla timer som jah hittade på nättet var skrivit av JavaScript.-->
+
 <head>
     <title>Inlämningsuppgift 1/index</title>
     <meta charset="utf-8">
@@ -105,8 +112,9 @@
     <section class="showcase">
       <div class="container">
         <div class="showcase-body">
-          <h1>Shopping is <strong>MORE FUN</strong></h1>
-          <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam uitricies faucies. Quisque quis erat sed</p>
+          <h1>Shopping is </h1>
+          <h1><strong>MORE FUN</strong></h1>      
+          <p>Vivamus dignissim a ex eu ornare. Ut fermentum orci vel diam uitricies faucies. Quisque quis erat sed</p> 
           <a href="#" class="btn btn-lg btn-white">SHOP NOW</a>
         </div>
         <img src="images/showcase-image.svg" alt="two people standing">
@@ -294,6 +302,39 @@
           </div>
       </div>
       </section>
+
+      <section class="shop-by-category color-gray-1 new-customer">
+        <div class="container">
+            <div class="row-fluid d-flex justify-content-between">
+                <div class="new-customer-banner d-flex flex-column justify-content-center align-items-center">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="new-customer-banner_30_off">
+                        </div>
+                        <div class="new-customer-banner_for_text">
+                            <h5>FOR NEW CUSTOMER </h5>
+                        </div>
+                        <div>
+                                  <div class="special-offer2">
+                                    <button class="btn btn-theme">SHOP NOW</button>
+                                  </div>                                 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 new-customer-description-container">
+                    <p>
+                        Donec pulvinar arcu vitae ipsum varius cursus. Nunc iaculis fermentum iaculis. Nunc pulvinar purus
+                        at erat lacinia, ut convallis nibh consequat. Integer nulla nisi, aliquam at tellus a, viverra
+                        scelerisque purus. Nam pretium iaculis ultrices.
+                      </p>
+                    <div>
+                      <div class="special-offer1"> 
+                        <button class="btn btn-theme">LEARN MORE</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
       <section class="shop-by-category">
         <div class="container">
             <div class="section-title">
@@ -405,7 +446,7 @@
             </div>          
           </div>
           <div class="timer">
-          <img src="Images/Placeholders/timer.png" alt="two people standing">
+          <img src="Images/Placeholders/timer.png" alt="timer">
        
             <div class="special-offer1">
               <button class="btn btn-theme">SHOP NOW</button>
@@ -515,18 +556,17 @@
           
             </div>
     </section>
-    <section class="showcase">
+    <section class="showcase4">
       <div class="container">
         <div class="showcase-body">
           <h1>SUBSCRIBE <strong>NOW</strong></h1>
-          <p>Signup for awesome news about our new products and
-            know our special discounts on products.</p>
+          <p>Signup for awesome news about our new products andknow our special discounts on products.</p>
             <div class="mb-4">
-              <label for="signin_email">Email<span class="required">*</span></label> 
-              <input id="signin_email" type="email" require>
-                <div class="special-offer">
+              <form class="form-floating">
+                <input type="email" class="form-control" id="floatingInputValue">
+                <label for="floatingInputValue">Enter email address</label>
                 <button class="btn btn-theme">SUBSCRIBE</button> 
-                </div> 
+              </form>
             </div>                           
          </div>
         <img src="Images/Placeholders/Background-image.png" alt="Background-image">
@@ -535,11 +575,10 @@
     </section>
     <section class="showcase">
       <div class="footer">
-      <p>© Copyright 2022 Kenkata</p>  
+      <h6>© Copyright 2022 Kenkata</h6>  
   </div>
 </section>
-<
-<!--   <div style="height: 4000px;"></div> -->
+
 </body>
 </html>
 
