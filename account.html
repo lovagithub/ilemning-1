@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inlämningsuppgift 1/account</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Min utlämnings uppgift/account">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Lova Juhlin">
+    <meta name="viewport" content="width=device-width">
+    <script src="https://kit.fontawesome.com/8444161cfc.js" crossorigin="anonymous" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+    <header>
+      <div class="top-menu">
+        <div class="container">
+            <div class="site-settings">
+                <div class="dropdown dropdown-theme me-3">
+                    <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span id="selected-language">ENG</span><i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                        <ul id="languages" class="dropdown-menu dropdown-theme">
+                            <li><a class="dropdown-item" href="#">ENG</a></li>
+                            <li><a class="dropdown-item" href="#">SWE</a></li>
+                        </ul>
+                </div>
+                <div class="dropdown dropdown-theme me-3">
+                  <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span id="selected-currency">EUR</span><i class="fa-solid fa-chevron-down"></i>
+                  </button>
+                      <ul id="currencies" class="dropdown-menu dropdown-theme">
+                          <li><a class="dropdown-item" href="#">EUR</a></li>
+                          <li><a class="dropdown-item" href="#">USD</a></li>
+                          <li><a class="dropdown-item" href="#">SEK</a></li>
+                      </ul>
+            </div>
+          </div>
+          
+            <div class="menu-links">
+              <span class="links">
+                <a href="#"> Newsletter</a>
+                <a href="#"> Contact ass</a>
+                <a href="#"> FAQS</a>
+              </span>
+               <span class="social-media">
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </span>
+            </div>
+        </div>
+      </div>
+      <div class="main-menu">
+        <div class="container">
+          <div class="brand">
+             <a href="index.html"><img src="Images/logotype.svg" alt="Kenkata logo"></a>
+          </div>
+           <div class="search">
+            <form id="searchboxForm">
+              <input id="query" type="text" placeholder="Search products...">
+              <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+             </form>
+           </div>
+          <div class="menu-links">
+               <a class="menu-link" href="index.html"><i class="fa-solid fa-user me-2"></i>My account</a>
+               <a class="menu-link" href="#"><i class="fa-solid fa-heart"></i></a>
+               <a class="menu-link" href="#"><i class="fa-solid fa-shuffle"></i></a>
+               <a class="menu-link" href="#"><i class="fa-solid fa-cart-shopping me-2"></i>
+               <span id="cart-total">€9999.00</span></a>
+           </div>
+        </div>
+      <nav>
+        <div class="container">
+            <div class="browse-categories">
+              <div class="dropdown">
+                <button type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>
+                    <i class="fa-solid fa-bars me-3"></i> Browse Categories
+                    </span>
+                    <i class="fa-solid fa-chevron-down ms-4"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Computers</a></li>
+                  <li><a class="dropdown-item" href="#">TV & Displays</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="special-offer">
+              <button class="btn btn-theme">SPECIAL OFFER</button>
+            </div>
+        </div>
+      </nav>
+    </div>
+    </header>
+
+    <section class="site-title">
+        <div class="container">
+            <h1>My Account</h1>
+              <ul class="breadcrumb">
+                <li><a href="index.html">Home</a></li>
+                <li>My Account</li>
+              </ul>
+        </div>
+    </section>
+
+    <section class="signup-signin form-theme">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title">LOGIN</h1>
+            <form id="signinForm">
+              <div class="mb-4">
+                <label for="signin_email">Email<span class="required">*</span></label>
+                <input id="signin_email" type="password" required>
+              </div>
+              <div class="mb-4">
+                <label for="signin_password">Password<span class="required">*</span></label>
+                <input id="signin_password" type="password" required>
+              </div>
+              <p class="card-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy</a>.</p>
+               <div class="mb-4 d-grid">
+                 <button type="submit" class="btn btn-lg btn-theme">LOG IN</button>
+              </div>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="d-flex">
+                    <input id="signin_rememberMe" type="checkbox" class="me-2">
+                    <label for="signin_rememberMe" style="display: inline-block">Remember me</label>
+                  </div>
+                    <a href="#">Lost your password?</a>
+                </div>
+                <div class="mb-4 external-logins">
+                  <div class="mb-0">
+                      <div class="label">OR LOGIN WITH</div>                      
+                      <div class="line"></div>
+                    </div>  
+                  </div>
+                    <div class="external-socialmedia-buttons">
+                      <div class="facebook-button">
+                        <button></button>
+                      </div>
+                      <div class="google-button">
+                      <button></button>
+                    </div>
+                    </div>
+            
+            </form>
+          </div>
+        </div>
+
+          <div class="card">
+            <div class="card-body">
+              <h1 class="card-title">REGISTER</h1>
+              <p class="card-text text-small">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</p>
+              <form id="signupForm">
+                <div class="mb-4">
+                  <label for="signup_firstName">First name<span class="required">*</span></label>
+                  <input id="signup_firstName" type="text" required>
+                </div>
+
+                <div class="mb-4">
+                  <label for="signup_lastName">Last name<span class="required">*</span></label>
+                  <input id="signup_lastName" type="text" required>
+                </div>
+
+                <div class="mb-4">
+                  <label for="signup_email">Email<span class="required">*</span></label>
+                  <input id="signup_email" type="text" required>
+                </div>
+
+                <div class="mb-4">
+                  <label for="signup_password">Password<span class="required">*</span></label>
+                  <input id="signup_password" type="text" required>
+                </div>
+              <p class="card-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <a href="#">privacy policy</a>.</p>
+                 <div class="mb-4 d-grid">
+                   <button type="submit" class="btn btn-lg btn-theme">REGISTER</button>
+                </div>
+            </form>
+          </div>
+          </div>
+        </div>
+    </section>
+    
+    <div class="container">
+      <div class="footer">
+      <p>© Copyright 2022 Kenkata</p>
+    </div>
+  </div>
+    <div style="height: 4000px"></div>
+</body>
+</html>
+
+
+
+
